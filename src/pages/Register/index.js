@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import GeneralForm from './components/General'
+import PersonalForm from './components/Personal'
 
 const RegisterForm  = () => {
 
@@ -20,7 +21,7 @@ const RegisterForm  = () => {
             return ( 
                 <>  
                     <h3> Step 2 - Dados Pessoais </h3>
-                    <GeneralForm onNext={() => updateStep(step + 1)} />
+                    <PersonalForm onNext={() => updateStep(step + 1)} />
                 </>
             )
         case 2: 
