@@ -9,6 +9,12 @@ const PersonalForm = ({ onNext }) => {
     const [ status, updateStatus] = useState('')
     const [ phone, updatePhone ] = useState('')
     const [ gender, updateGender ] = useState('')
+    const [ address, updateAddress ] = useState('')
+    const [ cep, updateCep] = useState('')
+    const [ city, updateCity ] = useState('')
+    const [ neighborhood, updateNeighborhood] = useState('')
+    const [ complement, updateComplement ] = useState('')
+    const [ state, updateState] = useState('')
 
     const onSubmit = (e) => {
         e.preventDefault()
@@ -74,6 +80,38 @@ const PersonalForm = ({ onNext }) => {
                 </Form.Group>
             
 
+            </Row> 
+            <Row> 
+                <Form.Group controlId="address" as={Col}>
+                    <Form.Label>Endereço</Form.Label>
+                    <Form.Control type="text" placeholder="" value={cpf} onChange={(e) => updateCpf(e.target.value) } />
+                </Form.Group>
+                <Form.Group controlId="cpf" as={Col}>
+                    <Form.Label>Número</Form.Label>
+                    <Form.Control type="number" placeholder="" value={cpf} onChange={(e) => updateCpf(e.target.value) } />
+                </Form.Group>
+                <Form.Group controlId="cpf" as={Col}>
+                    <Form.Label>Complemento</Form.Label>
+                    <Form.Control type="text" placeholder="" value={cpf} onChange={(e) => updateCpf(e.target.value) } />
+                </Form.Group>
+            </Row>
+            <Row> 
+                <Form.Group controlId="cpf" as={Col}>
+                    <Form.Label>Bairro</Form.Label>
+                    <Form.Control type="number" placeholder="" value={cpf} onChange={(e) => updateCpf(e.target.value) } />
+                </Form.Group>
+                <Form.Group controlId="city" as={Col}>
+                    <Form.Label>Cidade</Form.Label>
+                    <Form.Control type="number" placeholder="" value={cpf} onChange={(e) => updateCpf(e.target.value) } />
+                </Form.Group>
+                <Form.Group controlId="state" as={Col}>
+                    <Form.Label>Estado</Form.Label>
+                    <Form.Control type="text" placeholder="" value={cpf} onChange={(e) => updateCpf(e.target.value) } />
+                </Form.Group>
+                <Form.Group controlId="cep" as={Col}>
+                    <Form.Label>CEP</Form.Label>
+                    <Form.Control type="text" placeholder="" value={cpf} onChange={(e) => updateCpf(e.target.value) } />
+                </Form.Group>
             </Row>
             <Button variant="primary" type="submit" onClick={ (e) => onSubmit(e) }>
                 Next 

@@ -15,28 +15,28 @@ const RegisterForm  = () => {
         case 0: 
             return ( 
                 <> 
-                    <h3> Step 1 - Dados Gerais </h3>
+                    <h3> Passo 1 de 4 - Dados Gerais </h3>
                     <GeneralForm onNext={() => updateStep(step + 1)} />
                 </>
             )
         case 1: 
             return ( 
                 <>  
-                    <h3> Step 2 - Dados Pessoais </h3>
+                    <h3> Passo 2 de 4 - Dados Pessoais </h3>
                     <PersonalForm onNext={() => updateStep(step + 1)} />
                 </>
             )
         case 2: 
         return ( 
                 <>
-                    <h3> Step 3 - Dados Profissionais</h3>
+                    <h3> Passo 3 de 4 - Dados Profissionais</h3>
                     <ProfessionalForm onNext={() => updateStep(step + 1)} />
                 </>
             )
         case 3: 
             return ( 
                 <> 
-                    <h3> Step 3 - Dados Bancários </h3>
+                    <h3> Passo 4 de 4 - Dados Bancários </h3>
                     <BankForm onNext={() => updateStep(step + 1)} />
                 </>
             )
