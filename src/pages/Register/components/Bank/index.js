@@ -1,13 +1,11 @@
 import React, { useState } from 'react' 
 import { Form, Button } from 'react-bootstrap'
 
-const GeneralForm = ({ onNext }) => {
+const BankForm = ({ onNext }) => {
     
-    const [ fullName, updateFullName ] = useState('') 
-    const [ email, updateEmail ] = useState('') 
-    const [ accountType, updateAccountType ] = useState('pf') 
-    const [ password, updatePassword ] = useState('')
-    const [ confirmPassword, updateConfirmPassword ] = useState('')
+    const [ bank, updateBank ] = useState('') 
+    const [ agency, updateAgency] = useState('') 
+    const [ account, updateAccount ] = useState('') 
 
     const onSubmit = (e) => {
         e.preventDefault()
@@ -17,28 +15,20 @@ const GeneralForm = ({ onNext }) => {
     return (
         <Form>
             <Form.Group controlId="fullName">
-                <Form.Label>Nome Completo</Form.Label>
-                <Form.Control type="text" placeholder="" value={fullName} onChange={(e) => updateFullName(e.target.value) } />
+                <Form.Label>Banco</Form.Label>
+                <Form.Control type="text" placeholder="" value={bank} onChange={(e) => updateBank(e.target.value) } />
             </Form.Group>
             
             <Form.Group controlId="formBasicEmail">
-                <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" value={email} onChange={(e) => updateEmail(e.target.value) } />
-                <Form.Text className="text-muted">
-                    We'll never share your email with anyone else.
-                </Form.Text>
+                <Form.Label>Agência</Form.Label>
+                <Form.Control type="email" placeholder="" value={agency} onChange={(e) => updateAgency(e.target.value) } />
             </Form.Group>
         
             <Form.Group controlId="formBasicPassword">
-                <Form.Label>Senha</Form.Label>
-                <Form.Control type="password" placeholder="Password" value={password}  onChange={(e) => updatePassword(e.target.value) } /> 
+                <Form.Label>Conta</Form.Label>
+                <Form.Control type="text" placeholder="" value={account}  onChange={(e) => updateAccount(e.target.value) } /> 
             </Form.Group>
-        
-            <Form.Group controlId="formBasicPassword">
-                <Form.Label>Confirmar senha</Form.Label>
-                <Form.Control type="password" placeholder="Password" value={confirmPassword}  onChange={(e) => updateConfirmPassword(e.target.value) } />
-            </Form.Group>
-            
+
             <Button variant="primary" type="submit" onClick={ (e) => onSubmit(e) }>
                 Next 
             </Button>
@@ -48,4 +38,4 @@ const GeneralForm = ({ onNext }) => {
 
 }
 
-export default GeneralForm
+export default BankForm

@@ -1,13 +1,11 @@
 import React, { useState } from 'react' 
 import { Form, Button } from 'react-bootstrap'
 
-const GeneralForm = ({ onNext }) => {
+const ProfessionalForm = ({ onNext }) => {
     
-    const [ fullName, updateFullName ] = useState('') 
-    const [ email, updateEmail ] = useState('') 
-    const [ accountType, updateAccountType ] = useState('pf') 
-    const [ password, updatePassword ] = useState('')
-    const [ confirmPassword, updateConfirmPassword ] = useState('')
+    const [ ocupation, updateOcupation ] = useState('') 
+    const [ company, updateCompany ] = useState('') 
+    const [ role, updateRole ] = useState('') 
 
     const onSubmit = (e) => {
         e.preventDefault()
@@ -17,27 +15,20 @@ const GeneralForm = ({ onNext }) => {
     return (
         <Form>
             <Form.Group controlId="fullName">
-                <Form.Label>Nome Completo</Form.Label>
-                <Form.Control type="text" placeholder="" value={fullName} onChange={(e) => updateFullName(e.target.value) } />
+                <Form.Label>Ocupação</Form.Label>
+                <Form.Control type="text" placeholder="" value={ocupation} onChange={(e) => updateOcupation(e.target.value) } />
             </Form.Group>
             
             <Form.Group controlId="formBasicEmail">
-                <Form.Label>Email</Form.Label>
-                <Form.Control type="email" placeholder="Enter email" value={email} onChange={(e) => updateEmail(e.target.value) } />
-                <Form.Text className="text-muted">
-                    We'll never share your email with anyone else.
-                </Form.Text>
+                <Form.Label>Empresa</Form.Label>
+                <Form.Control type="text" placeholder="Enter email" value={company} onChange={(e) => updateCompany(e.target.value) } />
             </Form.Group>
         
             <Form.Group controlId="formBasicPassword">
-                <Form.Label>Senha</Form.Label>
-                <Form.Control type="password" placeholder="Password" value={password}  onChange={(e) => updatePassword(e.target.value) } /> 
+                <Form.Label>Cargo</Form.Label>
+                <Form.Control type="text" placeholder="Password" value={role}  onChange={(e) => updateRole(e.target.value) } /> 
             </Form.Group>
         
-            <Form.Group controlId="formBasicPassword">
-                <Form.Label>Confirmar senha</Form.Label>
-                <Form.Control type="password" placeholder="Password" value={confirmPassword}  onChange={(e) => updateConfirmPassword(e.target.value) } />
-            </Form.Group>
             
             <Button variant="primary" type="submit" onClick={ (e) => onSubmit(e) }>
                 Next 
@@ -48,4 +39,4 @@ const GeneralForm = ({ onNext }) => {
 
 }
 
-export default GeneralForm
+export default ProfessionalForm

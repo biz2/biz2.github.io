@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
+import BankForm from './components/Bank'
 import GeneralForm from './components/General'
 import PersonalForm from './components/Personal'
+import ProfessionalForm from './components/Professional'
 
 const RegisterForm  = () => {
 
@@ -28,14 +30,14 @@ const RegisterForm  = () => {
         return ( 
                 <>
                     <h3> Step 3 - Dados Profissionais</h3>
-                    <GeneralForm onNext={() => updateStep(step + 1)} />
+                    <ProfessionalForm onNext={() => updateStep(step + 1)} />
                 </>
             )
         case 3: 
             return ( 
                 <> 
                     <h3> Step 3 - Dados Bancários </h3>
-                    <GeneralForm onNext={() => updateStep(step + 1)} />
+                    <BankForm onNext={() => updateStep(step + 1)} />
                 </>
             )
     }
