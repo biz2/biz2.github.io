@@ -17,7 +17,7 @@ const RegisterForm  = () => {
     switch (step) {
         case 0: 
             return ( 
-                <Container> 
+                <Container className='form-container'> 
                     <Row> 
                         <Col>
                             <h3> Passo 1 de 4 - Dados Gerais  </h3>
@@ -28,35 +28,35 @@ const RegisterForm  = () => {
             )
         case 1: 
             return ( 
-                <Container>  
+                <Container className='form-container'>  
                     <Row> 
                         <Col>
                             <h3> Passo 2 de 4 - Dados Pessoais </h3>
                         </Col>
                     </Row>
-                    <PersonalForm onNext={() => updateStep(step + 1)} />
+                    <PersonalForm onNext={() => updateStep(step + 1)}  onPrevious={() =>  updateStep(step - 1)} />
                 </Container>
             )
         case 2: 
-        return ( 
-            <Container> 
-                <Row> 
-                    <Col>
-                        <h3> Passo 3 de 4 - Dados Profissionais</h3>
-                    </Col>
-                </Row>
-                <ProfessionalForm onNext={() => updateStep(step + 1)} />
-            </Container>
-            )
+            return ( 
+                <Container className='form-container'>  
+                    <Row> 
+                        <Col>
+                            <h3> Passo 3 de 4 - Dados Profissionais</h3>
+                        </Col>
+                    </Row>
+                    <ProfessionalForm onNext={() => updateStep(step + 1)} onPrevious={() =>  updateStep(step - 1)} />
+                </Container>
+                )
         case 3: 
             return ( 
-                <Container> 
+                <Container className='form-container'>  
                     <Row> 
                         <Col>
                         <h3> Passo 4 de 4 - Dados Bancários </h3>
                         </Col>
                     </Row>
-                    <BankForm onNext={() => submitForm()} />
+                    <BankForm onNext={() => submitForm()} onPrevious={() =>  updateStep(step - 1)} />
                 </Container>
         )
     }

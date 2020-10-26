@@ -3,7 +3,7 @@ import { Form, Button, Row, Col } from 'react-bootstrap'
 import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
 import PlacesAutocomplete, { geocodeByAddress } from 'react-places-autocomplete'
 
-const PersonalForm = ({ onNext }) => {
+const PersonalForm = ({ onNext, onPrevious }) => {
     
     const [ cpf, updateCpf ] = useState('') 
     const [ rg, updateRg ] = useState('') 
@@ -24,13 +24,11 @@ const PersonalForm = ({ onNext }) => {
         onNext()
     }
 
-    const updateLocationData = (e) => {
-        
-        geocodeByAddress(e)
-            .then( results => console.log(results))
-        
+    const handlePreviousClick = (e) => {
+      e.preventDefault() 
+      onPrevious()
+  }
 
-    }
 
     return (
         <Form>
@@ -92,50 +90,6 @@ const PersonalForm = ({ onNext }) => {
             
 
             </Row> 
-            <Row> 
-                <Col>
-            { // <GooglePlacesAutocomplete apiKey="AIzaSyA07qil4QGjivSApafFbU2h3wdz7XI7OFg" as={Col} selectProps={{ value: googleAddress, onChange: updateLocationData }} />}
-}
-<PlacesAutocomplete
-        value={address}
-        onChange={updateAddress}
-        onSelect={updateLocationData}
-      >
-        {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
-          <div>
-            <input
-              {...getInputProps({
-                placeholder: 'Search Places ...',
-                className: 'location-search-input',
-              })}
-            />
-            <div className="autocomplete-dropdown-container">
-              {loading && <div>Loading...</div>}
-              {suggestions.map(suggestion => {
-                const className = suggestion.active
-                  ? 'suggestion-item--active'
-                  : 'suggestion-item';
-                // inline style for demonstration purpose
-                const style = suggestion.active
-                  ? { backgroundColor: '#fafafa', cursor: 'pointer' }
-                  : { backgroundColor: '#ffffff', cursor: 'pointer' };
-                return (
-                  <div
-                    {...getSuggestionItemProps(suggestion, {
-                      className,
-                      style,
-                    })}
-                  >
-                    <span>{suggestion.description}</span>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        )}
-      </PlacesAutocomplete>
-                </Col>
-            </Row>
             
             <Row> 
             <Form.Group controlId="address" as={Col}>
@@ -169,9 +123,18 @@ const PersonalForm = ({ onNext }) => {
                     <Form.Control type="text" placeholder="" value={cep} onChange={(e) => updateCep(e.target.value) } />
                 </Form.Group>
             </Row>
-            <Button variant="dark" type="submit" onClick={ (e) => onSubmit(e) }>
-                Next 
-            </Button>
+            
+
+            
+            <Form.Group className='d-flex justify-content-end'>
+                <Button variant="light" type="submit" onClick={ (e) => handlePreviousClick(e) }>
+                    Voltar 
+                </Button>
+                &nbsp;
+                <Button variant="dark" type="submit" onClick={ (e) => onSubmit(e) }>
+                    Próximo 
+                </Button>
+            </Form.Group>
 
         </Form>
     )

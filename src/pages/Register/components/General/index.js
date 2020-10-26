@@ -57,9 +57,11 @@ const GeneralForm = ({ onNext }) => {
 
             </Row>
             
-            <Button variant="dark" className='ml-auto' type="submit" onClick={ (e) => onSubmit(e) }>
-                Next 
-            </Button>
+            <Form.Group className='d-flex justify-content-end'>
+                <Button variant="dark" type="submit" onClick={ (e) => onSubmit(e) }>
+                    Próximo 
+                </Button>
+            </Form.Group>
 
         </Form>
     )

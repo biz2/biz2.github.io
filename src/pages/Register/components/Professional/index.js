@@ -1,7 +1,7 @@
 import React, { useState } from 'react' 
 import { Form, Button } from 'react-bootstrap'
 
-const ProfessionalForm = ({ onNext }) => {
+const ProfessionalForm = ({ onNext, onPrevious }) => {
     
     const [ ocupation, updateOcupation ] = useState('') 
     const [ company, updateCompany ] = useState('') 
@@ -11,6 +11,14 @@ const ProfessionalForm = ({ onNext }) => {
         e.preventDefault()
         onNext()
     }
+
+
+    const handlePreviousClick = (e) => {
+        e.preventDefault() 
+        onPrevious()
+    }
+  
+  
 
     return (
         <Form>
@@ -30,10 +38,15 @@ const ProfessionalForm = ({ onNext }) => {
             </Form.Group>
         
             
-            <Button variant="dark" type="submit" onClick={ (e) => onSubmit(e) }>
-                Next 
-            </Button>
-
+            <Form.Group className='d-flex justify-content-end'>
+                <Button variant="light" type="submit" onClick={ (e) => handlePreviousClick(e) }>
+                    Voltar 
+                </Button>
+                &nbsp;
+                <Button variant="dark" type="submit" onClick={ (e) => onSubmit(e) }>
+                    Próximo 
+                </Button>
+            </Form.Group>
         </Form>
     )
 
