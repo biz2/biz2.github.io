@@ -30,7 +30,7 @@ const ProfessionalForm = ({ onNext }) => {
             </Form.Group>
         
             
-            <Button variant="primary" type="submit" onClick={ (e) => onSubmit(e) }>
+            <Button variant="dark" type="submit" onClick={ (e) => onSubmit(e) }>
                 Next 
             </Button>
 

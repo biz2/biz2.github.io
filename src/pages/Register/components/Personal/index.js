@@ -1,7 +1,7 @@
 import React, { useState } from 'react' 
 import { Form, Button, Row, Col } from 'react-bootstrap'
 import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
-
+import PlacesAutocomplete, { geocodeByAddress } from 'react-places-autocomplete'
 
 const PersonalForm = ({ onNext }) => {
     
@@ -17,10 +17,19 @@ const PersonalForm = ({ onNext }) => {
     const [ neighborhood, updateNeighborhood] = useState('')
     const [ complement, updateComplement ] = useState('')
     const [ state, updateState] = useState('')
+    const [ googleAddress, updateGoogleAddress ] = useState(null)
 
     const onSubmit = (e) => {
         e.preventDefault()
         onNext()
+    }
+
+    const updateLocationData = (e) => {
+        
+        geocodeByAddress(e)
+            .then( results => console.log(results))
+        
+
     }
 
     return (
@@ -84,43 +93,83 @@ const PersonalForm = ({ onNext }) => {
 
             </Row> 
             <Row> 
-                <Form.Group controlId="address" as={Col}>
+                <Col>
+            { // <GooglePlacesAutocomplete apiKey="AIzaSyA07qil4QGjivSApafFbU2h3wdz7XI7OFg" as={Col} selectProps={{ value: googleAddress, onChange: updateLocationData }} />}
+}
+<PlacesAutocomplete
+        value={address}
+        onChange={updateAddress}
+        onSelect={updateLocationData}
+      >
+        {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
+          <div>
+            <input
+              {...getInputProps({
+                placeholder: 'Search Places ...',
+                className: 'location-search-input',
+              })}
+            />
+            <div className="autocomplete-dropdown-container">
+              {loading && <div>Loading...</div>}
+              {suggestions.map(suggestion => {
+                const className = suggestion.active
+                  ? 'suggestion-item--active'
+                  : 'suggestion-item';
+                // inline style for demonstration purpose
+                const style = suggestion.active
+                  ? { backgroundColor: '#fafafa', cursor: 'pointer' }
+                  : { backgroundColor: '#ffffff', cursor: 'pointer' };
+                return (
+                  <div
+                    {...getSuggestionItemProps(suggestion, {
+                      className,
+                      style,
+                    })}
+                  >
+                    <span>{suggestion.description}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+      </PlacesAutocomplete>
+                </Col>
+            </Row>
+            
+            <Row> 
+            <Form.Group controlId="address" as={Col}>
                     <Form.Label>Endereço</Form.Label>
-                    <Form.Control type="text" placeholder="" value={cpf} onChange={(e) => updateCpf(e.target.value) } />
+                    <Form.Control type="text" placeholder="" value={address} onChange={(e) => updateAddress(e.target.value) } />
                 </Form.Group>
                 <Form.Group controlId="cpf" as={Col}>
                     <Form.Label>Número</Form.Label>
-                    <Form.Control type="number" placeholder="" value={cpf} onChange={(e) => updateCpf(e.target.value) } />
+                    <Form.Control type="number" placeholder="" value={''} onChange={(e) => updateAddress(e.target.value) } />
                 </Form.Group>
                 <Form.Group controlId="cpf" as={Col}>
                     <Form.Label>Complemento</Form.Label>
-                    <Form.Control type="text" placeholder="" value={cpf} onChange={(e) => updateCpf(e.target.value) } />
-                </Form.Group>
-            </Row>
-            <Row> 
-                <Form.Group controlId="cpf" as={Col}>
-                    <Form.Label>Bairro</Form.Label>
-                    <Form.Control type="number" placeholder="" value={cpf} onChange={(e) => updateCpf(e.target.value) } />
-                </Form.Group>
-                <Form.Group controlId="city" as={Col}>
-                    <Form.Label>Cidade</Form.Label>
-                    <Form.Control type="number" placeholder="" value={cpf} onChange={(e) => updateCpf(e.target.value) } />
-                </Form.Group>
-                <Form.Group controlId="state" as={Col}>
-                    <Form.Label>Estado</Form.Label>
-                    <Form.Control type="text" placeholder="" value={cpf} onChange={(e) => updateCpf(e.target.value) } />
-                </Form.Group>
-                <Form.Group controlId="cep" as={Col}>
-                    <Form.Label>CEP</Form.Label>
-                    <Form.Control type="text" placeholder="" value={cpf} onChange={(e) => updateCpf(e.target.value) } />
+                    <Form.Control type="text" placeholder="" value={complement} onChange={(e) => updateComplement(e.target.value) } />
                 </Form.Group>
             </Row>
             <Row>
-                <Col>
-                    <GooglePlacesAutocomplete apiKey="AIzaSyA07qil4QGjivSApafFbU2h3wdz7XI7OFg" as={Col} />
-                </Col>
+            <Form.Group controlId="cpf" as={Col}>
+                    <Form.Label>Bairro</Form.Label>
+                    <Form.Control type="number" placeholder="" value={neighborhood} onChange={(e) => updateNeighborhood(e.target.value) } />
+                </Form.Group>
+                <Form.Group controlId="city" as={Col}>
+                    <Form.Label>Cidade</Form.Label>
+                    <Form.Control type="number" placeholder="" value={city} onChange={(e) => updateCity(e.target.value) } />
+                </Form.Group>
+                <Form.Group controlId="state" as={Col}>
+                    <Form.Label>Estado</Form.Label>
+                    <Form.Control type="text" placeholder="" value={state} onChange={(e) => updateState(e.target.value) } />
+                </Form.Group>
+                <Form.Group controlId="cep" as={Col}>
+                    <Form.Label>CEP</Form.Label>
+                    <Form.Control type="text" placeholder="" value={cep} onChange={(e) => updateCep(e.target.value) } />
+                </Form.Group>
             </Row>
-            <Button variant="primary" type="submit" onClick={ (e) => onSubmit(e) }>
+            <Button variant="dark" type="submit" onClick={ (e) => onSubmit(e) }>
                 Next 
             </Button>
 

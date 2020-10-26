@@ -57,7 +57,7 @@ const GeneralForm = ({ onNext }) => {
 
             </Row>
             
-            <Button variant="primary" type="submit" onClick={ (e) => onSubmit(e) }>
+            <Button variant="dark" className='ml-auto' type="submit" onClick={ (e) => onSubmit(e) }>
                 Next 
             </Button>
 
