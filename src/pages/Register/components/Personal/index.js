@@ -1,5 +1,7 @@
 import React, { useState } from 'react' 
 import { Form, Button, Row, Col } from 'react-bootstrap'
+import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
+
 
 const PersonalForm = ({ onNext }) => {
     
@@ -112,6 +114,11 @@ const PersonalForm = ({ onNext }) => {
                     <Form.Label>CEP</Form.Label>
                     <Form.Control type="text" placeholder="" value={cpf} onChange={(e) => updateCpf(e.target.value) } />
                 </Form.Group>
+            </Row>
+            <Row>
+                <Col>
+                    <GooglePlacesAutocomplete apiKey="AIzaSyA07qil4QGjivSApafFbU2h3wdz7XI7OFg" as={Col} />
+                </Col>
             </Row>
             <Button variant="primary" type="submit" onClick={ (e) => onSubmit(e) }>
                 Next 

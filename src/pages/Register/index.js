@@ -9,7 +9,9 @@ const RegisterForm  = () => {
     const [ step, updateStep ] = useState(0) 
     const [ formData, updateFormData ] = useState({})
 
-    console.log(step)
+    const submitForm = () => {
+        console.log('Submitting')
+    }
 
     switch (step) {
         case 0: 
@@ -37,7 +39,7 @@ const RegisterForm  = () => {
             return ( 
                 <> 
                     <h3> Passo 4 de 4 - Dados Bancários </h3>
-                    <BankForm onNext={() => updateStep(step + 1)} />
+                    <BankForm onNext={() => submitForm()} />
                 </>
             )
     }
