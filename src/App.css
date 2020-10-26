@@ -1,9 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+body {
+    font-family: 'Arvo', serif !important;
+}
+
 .hero {
     height: calc(100vh - 85px);
-    background: url('assets/home.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.home-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+h1, h5 {
+    text-align: right;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.home-image-container { 
+    background: url('./assets/home_image.jpg');
+    background-position: center;
+    height: calc(100vh - 85px);
+    background-size: cover;
+    border-radius: 0 0 0 100%;
+}
+
+.hero-svg {
+    margin: 50px;
+    width: 500px;
 }
 
 .form-container {
