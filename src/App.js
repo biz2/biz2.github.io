@@ -6,6 +6,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { BrowserRouter , Switch, Route, Link} from 'react-router-dom'
 import Home from './pages/Home';
 import NavigationBar from './components/NavigationBar';
+import WhatsappButton from './components/WhatsappButton';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             )
           }} />
         </Switch>
+        <WhatsappButton />
       </BrowserRouter>
     </div>  
   );
