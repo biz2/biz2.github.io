@@ -50,7 +50,7 @@ const PersonalForm = ({ onNext, onPrevious }) => {
 
                 <Form.Group controlId="birthday" as={Col}>
                     <Form.Label>Data de Nascimento</Form.Label>
-                    <Form.Control type="date" placeholder="01/01/1900" value={birthday}  onChange={(e) => updateBirthday(e.target.value) } /> 
+                    <Form.Control type="date" dateFormat='DD-MM-YYYY' value={birthday}  onChange={(e) => updateBirthday(e.target.value) } /> 
                 </Form.Group>
             
                 <Form.Group controlId="status" as={Col}>

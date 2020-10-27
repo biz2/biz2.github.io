@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Arvo', serif !important;
+    overflow: hidden;
 }
 
 .hero {

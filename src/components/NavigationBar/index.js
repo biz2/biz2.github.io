@@ -1,14 +1,18 @@
 import React from 'react' 
 import logo from '../../assets/logo.png'
-import { Nav, Button, Navbar, NavbarBrand } from 'react-bootstrap'
-import { Link, withRouter } from 'react-router-dom'
+import { Container, Nav, Button, Navbar, NavbarBrand } from 'react-bootstrap'
+import { Link, NavLink, withRouter } from 'react-router-dom'
 
 const NavigationBar = (props) => {
 
     return (
-        <Navbar bg='light' variant='light' >
+        
+        <Navbar bg='white' variant='light'>
             <NavbarBrand> 
-                    <img src={logo} className='nav-logo' />
+                    <Nav.Link  href='/'>
+                        <img src={logo} className='nav-logo' />
+
+                    </Nav.Link >
             </NavbarBrand>
             <Nav
                 activeKey="/home"
@@ -18,10 +22,14 @@ const NavigationBar = (props) => {
                 <Nav.Link href="/register" > Quem somos </Nav.Link>
                 &nbsp;
                 <Nav.Link href="/register" > Como funciona </Nav.Link>
-                &nbsp;
+                {/* &nbsp;
                 <Nav.Link href="/register" > Quero investir  </Nav.Link>
                 &nbsp;
-                <Nav.Link href="/register" > Quero captar  </Nav.Link>
+                <Nav.Link href="/register" > Quero captar  </Nav.Link> */}
+                &nbsp;
+                <Nav.Link href="/register" > Projetos captados    </Nav.Link>
+                &nbsp;
+                <Nav.Link href="/register" > Projetos em captação    </Nav.Link>
             </Nav>
             <Nav
                 activeKey="/home"
@@ -33,6 +41,7 @@ const NavigationBar = (props) => {
                 <Nav.Link href="/login" as={Button} variant='dark' className='text-white' > Login </Nav.Link>
             </Nav>
         </Navbar>
+            
     )
 }
 
