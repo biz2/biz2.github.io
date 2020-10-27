@@ -1,6 +1,7 @@
 import React, { useState } from 'react' 
 import { Form, Button, Row, Col } from 'react-bootstrap'
 import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
+import MaskedInput from 'react-maskedinput';
 import PlacesAutocomplete, { geocodeByAddress } from 'react-places-autocomplete'
 
 const PersonalForm = ({ onNext, onPrevious }) => {
@@ -36,12 +37,12 @@ const PersonalForm = ({ onNext, onPrevious }) => {
 
                 <Form.Group controlId="cpf" as={Col}>
                     <Form.Label>CPF</Form.Label>
-                    <Form.Control type="text" placeholder="" value={cpf} onChange={(e) => updateCpf(e.target.value) } />
+                    <Form.Control type="text" placeholder=""  as={MaskedInput} mask='111.111.111-11' value={cpf} onChange={(e) => updateCpf(e.target.value) } />
                 </Form.Group>
                 
                 <Form.Group controlId="rg" as={Col}>
                     <Form.Label>RG</Form.Label>
-                    <Form.Control type="text" placeholder="" value={rg} onChange={(e) => updateRg(e.target.value) } />
+                    <Form.Control type="text" placeholder="" as={MaskedInput} mask='11.111.111-1' value={rg} onChange={(e) => updateRg(e.target.value) } />
                 </Form.Group>
 
             </Row>
@@ -71,7 +72,7 @@ const PersonalForm = ({ onNext, onPrevious }) => {
         
                 <Form.Group controlId="phone" as={Col}>
                     <Form.Label>Telefone</Form.Label>
-                    <Form.Control type="phone" placeholder="(11) 99999 9999" value={phone}  onChange={(e) => updatePhone(e.target.value) } />
+                    <Form.Control type="phone" as={MaskedInput} mask='(11) 11111-1111' value={phone}  onChange={(e) => updatePhone(e.target.value) } />
                 </Form.Group>
             
                 <Form.Group controlId="gender" as={Col}>

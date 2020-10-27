@@ -20,7 +20,7 @@ function App() {
               <Container>
                 <Row>
                   <Col>
-                    <h1> Registration </h1> 
+                    <h1> Cadastro </h1> 
                   </Col>
                 </Row>
                 <RegisterForm />

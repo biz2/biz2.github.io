@@ -6,7 +6,7 @@ import { Link, withRouter } from 'react-router-dom'
 const NavigationBar = (props) => {
 
     return (
-        <Navbar bg='light' variant='light'>
+        <Navbar bg='light' variant='light' >
             <NavbarBrand> 
                     <img src={logo} className='nav-logo' />
             </NavbarBrand>

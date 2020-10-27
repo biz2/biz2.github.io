@@ -25,7 +25,7 @@ const GeneralForm = ({ onNext }) => {
 
                 <Form.Group controlId="formBasicEmail" as={Col}>
                     <Form.Label>Email</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" value={email} onChange={(e) => updateEmail(e.target.value) } />
+                    <Form.Control type="email" placeholder="" value={email} onChange={(e) => updateEmail(e.target.value) } />
                     <Form.Text className="text-muted">
                         We'll never share your email with anyone else.
                     </Form.Text>
@@ -47,12 +47,12 @@ const GeneralForm = ({ onNext }) => {
 
                 <Form.Group controlId="formBasicPassword" as={Col}>
                     <Form.Label>Senha</Form.Label>
-                    <Form.Control type="password" placeholder="Password" value={password}  onChange={(e) => updatePassword(e.target.value) } /> 
+                    <Form.Control type="password" placeholder="" value={password}  onChange={(e) => updatePassword(e.target.value) } /> 
                 </Form.Group>
             
                 <Form.Group controlId="formBasicPassword" as={Col}>
                     <Form.Label>Confirmar senha</Form.Label>
-                    <Form.Control type="password" placeholder="Password" value={confirmPassword}  onChange={(e) => updateConfirmPassword(e.target.value) } />
+                    <Form.Control type="password" placeholder="" value={confirmPassword}  onChange={(e) => updateConfirmPassword(e.target.value) } />
                 </Form.Group>
 
             </Row>

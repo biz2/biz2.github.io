@@ -29,12 +29,12 @@ const ProfessionalForm = ({ onNext, onPrevious }) => {
             
             <Form.Group controlId="formBasicEmail">
                 <Form.Label>Empresa</Form.Label>
-                <Form.Control type="text" placeholder="Enter email" value={company} onChange={(e) => updateCompany(e.target.value) } />
+                <Form.Control type="text" placeholder="" value={company} onChange={(e) => updateCompany(e.target.value) } />
             </Form.Group>
         
             <Form.Group controlId="formBasicPassword">
                 <Form.Label>Cargo</Form.Label>
-                <Form.Control type="text" placeholder="Password" value={role}  onChange={(e) => updateRole(e.target.value) } /> 
+                <Form.Control type="text" placeholder="" value={role}  onChange={(e) => updateRole(e.target.value) } /> 
             </Form.Group>
         
             
