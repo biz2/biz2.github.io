@@ -33,13 +33,14 @@ h1 {
 }
 
 .home-image-container { 
-    background: url('./assets/home_image.jpg');
     background-position: center;
     height: calc(100vh - 85px);
     background-size: cover;
     border-radius: 0 0 0 100%;
     position: relative;
 }
+
+
 
 .home-image-container::after {
     content: ' '; 
