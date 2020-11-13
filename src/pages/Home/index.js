@@ -95,7 +95,7 @@ const Home  = () => {
                         <Row><Col> &nbsp; </Col></Row>
                         <Row> 
                             <Col>
-                                <Card className='d-flex flex-column justify-content-around align-items-center step-card'>
+                                <Card className='d-flex flex-column justify-content-around align-items-center team-card'>
                                     <Card.Img src={rodrigo_image} bsPrefix='team-img' />
                                     <Card.Title> Rodrigo Fernandes </Card.Title>
                                     <Card.Text> 
@@ -106,7 +106,7 @@ const Home  = () => {
                                 </Card>
                             </Col>
                             <Col>
-                                <Card className='d-flex flex-column justify-content-around align-items-center step-card'>
+                                <Card className='d-flex flex-column justify-content-around align-items-center team-card'>
                                     <Card.Img src={danilo_image} bsPrefix='team-img' />
                                     <Card.Title> Danilo Moura </Card.Title>
                                     <Card.Text> 
@@ -117,7 +117,7 @@ const Home  = () => {
                                 </Card>
                             </Col>
                             <Col>
-                                <Card className='d-flex flex-column justify-content-around align-items-center step-card'>
+                                <Card className='d-flex flex-column justify-content-around align-items-center team-card'>
                                     <Card.Img src={vitor_image} bsPrefix='team-img' />
                                     <Card.Title> Vitor Bigelli </Card.Title>
                                     <Card.Text> 

@@ -114,7 +114,7 @@ h1 {
 
 .step-card {
     padding: 20px;
-    background-color: #fafafa;
+    background: #fff !important;
     height: 350px;
     border: none;
     text-align: center;
@@ -136,7 +136,7 @@ h1 {
 }
 
 .light-bg {
-    background-color: #ffffff;
+    background-color: rgba(255,255,255,0.5);
     transition: background 0.5s ease-in-out;
 }
 
@@ -150,12 +150,40 @@ h1 {
     border-radius: 50%;
 }
 
-.step-card .card-title { 
+.card-title { 
     margin: 20px 0 !important;
 }
 
 .team-section {
+    position: relative;
+}
+
+.team-section::before {
+    content: ' '; 
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    left: -35vw;
+    top: -10vw;
     background: #333;
-    border-radius: 0 0 100% 0 ;
-    color: white;
+    border-radius: 0 100% 100% 0;
+    z-index: -1;
+}
+
+
+.team-section::after {
+    content: ' '; 
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    right: -35vw;
+    top: 10vw;
+    background: #ddd;
+    border-radius: 100% 0 0 100%;
+    z-index: -1;
+}
+
+.team-card {
+    background: transparent;
+    border: none;
 }
