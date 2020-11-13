@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import BankForm from './components/Bank'
 import GeneralForm from './components/General'
-import PersonalForm from './components/Personal'
+import AddresslForm from './components/Address'
 import ProfessionalForm from './components/Professional'
+import LoginForm from './components/Login'
 import { Container, Col, Row } from 'react-bootstrap'
 
 const RegisterForm  = () => {
@@ -18,6 +19,12 @@ const RegisterForm  = () => {
         case 0: 
             return ( 
                 <Container className='form-container'> 
+                    <LoginForm onNext={() => updateStep(step + 1)} />
+                </Container>
+            )
+        case 1: 
+            return ( 
+                <Container className='form-container'> 
                     <Row> 
                         <Col>
                             <h3> Passo 1 de 4 - Dados Gerais  </h3>
@@ -26,34 +33,34 @@ const RegisterForm  = () => {
                     <GeneralForm onNext={() => updateStep(step + 1)} />
                 </Container>
             )
-        case 1: 
-            return ( 
-                <Container className='form-container'>  
-                    <Row> 
-                        <Col>
-                            <h3> Passo 2 de 4 - Dados Pessoais </h3>
-                        </Col>
-                    </Row>
-                    <PersonalForm onNext={() => updateStep(step + 1)}  onPrevious={() =>  updateStep(step - 1)} />
-                </Container>
-            )
         case 2: 
             return ( 
                 <Container className='form-container'>  
                     <Row> 
                         <Col>
-                            <h3> Passo 3 de 4 - Dados Profissionais</h3>
+                            <h3> Passo 2 de 4 - Informações de Endereço </h3>
                         </Col>
                     </Row>
-                    <ProfessionalForm onNext={() => updateStep(step + 1)} onPrevious={() =>  updateStep(step - 1)} />
+                    <AddresslForm onNext={() => updateStep(step + 1)}  onPrevious={() =>  updateStep(step - 1)} />
                 </Container>
-                )
+            )
         case 3: 
             return ( 
                 <Container className='form-container'>  
                     <Row> 
                         <Col>
-                        <h3> Passo 4 de 4 - Dados Bancários </h3>
+                            <h3> Passo 3 de 4 - Informações Profissionais </h3>
+                        </Col>
+                    </Row>
+                    <ProfessionalForm onNext={() => updateStep(step + 1)} onPrevious={() =>  updateStep(step - 1)} />
+                </Container>
+                )
+        case 4: 
+            return ( 
+                <Container className='form-container'>  
+                    <Row> 
+                        <Col>
+                        <h3> Passo 4 de 4 - Informações Bancárias </h3>
                         </Col>
                     </Row>
                     <BankForm onNext={() => submitForm()} onPrevious={() =>  updateStep(step - 1)} />
