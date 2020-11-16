@@ -46,7 +46,7 @@ const Home  = () => {
             </Row>
             <Row>
                 <Col>
-                    <Container className='page-section'>
+                    <Container id='about' className='page-section'>
                         <Row>
                             <Col>
                                 <h1> Sobre nós </h1>
@@ -133,7 +133,7 @@ const Home  = () => {
             </Row>
             <Row>
                 <Col xs={12}>
-                    <Container className='page-section'>
+                    <Container id='howitworks' className='page-section'>
                         <Row>
                             <Col>
                                 <h1> Como funciona? </h1>

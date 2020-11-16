@@ -218,3 +218,7 @@ footer {
 #mc_embed_signup .col {
     margin: 0 !important;
 }
+
+html {
+    scroll-behavior: smooth;
+}
