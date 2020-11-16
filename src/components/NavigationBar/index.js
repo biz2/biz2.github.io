@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react' 
 import logo from '../../assets/logo.png'
-import { Container, Nav, Button, Navbar, NavbarBrand } from 'react-bootstrap'
-import { Link, NavLink, withRouter } from 'react-router-dom'
+import { Nav, Button, Navbar, NavbarBrand } from 'react-bootstrap'
+import { withRouter } from 'react-router-dom'
 
 const NavigationBar = (props) => {
 
@@ -29,7 +29,7 @@ const NavigationBar = (props) => {
         <Navbar variant='light' ref={navRef} className={ navBackground ? 'light-bg' : 'transparent-bg'} fixed='top'>
             <NavbarBrand> 
                     <Nav.Link  href='/'>
-                        <img src={logo} className='nav-logo' />
+                        <img src={logo} className='nav-logo' alt='biz2 logo'/>
                     </Nav.Link >
             </NavbarBrand>
             <Nav

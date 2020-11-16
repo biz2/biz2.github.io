@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import RegisterForm from './pages/Register';
 import { Container, Row, Col } from 'react-bootstrap';
-import { BrowserRouter , Switch, Route, Link} from 'react-router-dom'
+import { BrowserRouter , Switch, Route } from 'react-router-dom'
 import Home from './pages/Home';
 import logo from './assets/logo.png'
 import NavigationBar from './components/NavigationBar';
@@ -32,7 +32,7 @@ function App() {
         </Switch>
         <WhatsappButton /> 
         <footer>
-          <img src={logo} className='nav-logo' />
+          <img src={logo} className='nav-logo' alt='biz2 logo' />
           <div>Icons made by <a href="https://www.flaticon.com/free-icon/investing_3310790" title="ultimatearm">ultimatearm</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </footer>
       </BrowserRouter>

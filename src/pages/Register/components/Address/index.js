@@ -1,5 +1,4 @@
 import React, { useState } from 'react' 
-import MaskedInput from 'react-maskedinput';
 import { Form, Button, Row, Col } from 'react-bootstrap'
 
 const PersonalForm = ({ onNext, onPrevious }) => {

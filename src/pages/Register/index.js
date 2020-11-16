@@ -9,7 +9,7 @@ import { Container, Col, Row } from 'react-bootstrap'
 const RegisterForm  = () => {
 
     const [ step, updateStep ] = useState(0) 
-    const [ formData, updateFormData ] = useState({})
+    // const [ formData, updateFormData ] = useState({})
 
     const submitForm = () => {
         console.log('Submitting')
@@ -65,7 +65,9 @@ const RegisterForm  = () => {
                     </Row>
                     <BankForm onNext={() => submitForm()} onPrevious={() =>  updateStep(step - 1)} />
                 </Container>
-        )
+            )
+        default: 
+            return null
     }
 
 
