@@ -97,7 +97,7 @@ const Home  = () => {
                             <Col>
                                 <Card className='d-flex flex-column justify-content-around align-items-center team-card'>
                                     <Card.Img src={rodrigo_image} bsPrefix='team-img' />
-                                    <Card.Title> Rodrigo Fernandes </Card.Title>
+                                    <Card.Title> Rodrigo Hernandes </Card.Title>
                                     <Card.Text> 
                                         Nam tincidunt justo dui, eget aliquet nunc ultricies vel. Donec luctus iaculis 
                                         tortor, ut faucibus tortor fermentum at. Praesent eget suscipit mi. In cursus 
@@ -199,6 +199,47 @@ const Home  = () => {
                                 </Card>
                             </Col>
                         </Row>
+                    </Container>
+                </Col>
+                <Col className='form-section'>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <h1> Seja um dos primeiros a saber do lançamento! </h1>
+                            </Col>
+                        </Row>
+                        <div id="mc_embed_signup">
+                            <form action="https://biz2.us7.list-manage.com/subscribe/post?u=72d3816dbc554b164a0e191dd&amp;id=51bcdd45ac" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                                
+                            {/* <div class="indicates-required"><span class="asterisk">*</span> indicates required</div> */}
+                            <Row>
+                                <div class="mc-field-group col">
+                                    <label for="mce-FNAME">Nome Completo </label>
+                                    <input type="text" name="FNAME" class="" id="mce-FNAME" />
+                                </div>
+                            </Row>
+                            <Row>
+                                <div class="mc-field-group col">
+                                    <label for="mce-EMAIL">Email </label>
+                                    <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" />
+                                </div>
+                                <div class="mc-field-group size1of2 col">
+                                    <label for="mce-MMERGE3">Telefone </label>
+                                    <input type="text" name="MMERGE3" class="" id="mce-MMERGE3" />
+                                </div>
+                            </Row>
+                            
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style={{display: 'none'}}></div>
+                                <div class="response" id="mce-success-response" style={{display: 'none'}}></div>
+                            </div>    
+                                {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
+                                <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true"><input type="text" name="b_72d3816dbc554b164a0e191dd_51bcdd45ac" tabindex="-1" value="" /></div>
+                                <div class="clear"><input type="submit" value="Inscrever-se" name="subscribe" id="mc-embedded-subscribe" class="button" /></div>
+                                </div>
+                            </form>
+                        </div>
                     </Container>
                 </Col>
             </Row>
