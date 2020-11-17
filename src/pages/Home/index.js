@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Col, Card } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import About from './components/About'
 import Team from './components/Team'
@@ -10,7 +10,6 @@ import image_1 from '../../assets/home_image.jpg'
 import image_2 from '../../assets/home_image_2.jpg'
 import image_3 from '../../assets/home_image_3.jpg'
 import image_4 from '../../assets/home_image_4.jpg'
-import image_6 from '../../assets/how_it_works.svg'
 
 const images = [
   image_1, 
