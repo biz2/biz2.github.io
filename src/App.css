@@ -122,14 +122,17 @@ h1 {
     height: 350px;
     border: none;
     text-align: center;
+    color: black;
+}
+
+.step-card p {
+    font-size: medium !important;
 }
 
 .step-card svg {
-    fill: #1ea4db;
-}
-
-.step-card path {
-    stroke: #1ea4db;
+    width: 100px;
+    height: 100px;
+    height: auto;
 }
 
 .banner-image {

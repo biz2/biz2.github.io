@@ -1,10 +1,12 @@
 import React from 'react'
 
 import { Container, Row, Col, Card } from 'react-bootstrap'
+import { ReactSVG } from 'react-svg'
 
 // Icons
-import { GiPayMoney, GiReceiveMoney,  } from 'react-icons/gi'
-import { GrLineChart } from 'react-icons/gr'
+import investment_image from '../../../../assets/investment.svg'
+import growth_image from '../../../../assets/growth.svg'
+import conversion_image from '../../../../assets/filter.svg'
 
 // Images 
 import image_6 from '../../../../assets/how_it_works.svg'
@@ -44,13 +46,13 @@ const HowItWorks = () => {
                     </Row>
                 </Container>
             </Col>
-            <Col xs={12} className='banner-image'>
+            <Col xs={12} className='banner'>
                 <Container>
                     <Row>
                         <Col>
                             <Card className='d-flex flex-column justify-content-around align-items-center step-card'>
                                 <Card.Title> Investimento </Card.Title>
-                                <GiPayMoney size={50} />
+                                <ReactSVG src={investment_image} />
                                 <Card.Text> 
                                     Nam tincidunt justo dui, eget aliquet nunc ultricies vel. Donec luctus iaculis 
                                     tortor, ut faucibus tortor fermentum at. Praesent eget suscipit mi. In cursus 
@@ -61,7 +63,7 @@ const HowItWorks = () => {
                         <Col>
                             <Card className='d-flex flex-column justify-content-around align-items-center step-card'>
                                 <Card.Title> Acompanhamento </Card.Title>
-                                <GrLineChart size={50} />
+                                <ReactSVG src={growth_image} />
                                 <Card.Text> 
                                     Nam tincidunt justo dui, eget aliquet nunc ultricies vel. Donec luctus iaculis 
                                     tortor, ut faucibus tortor fermentum at. Praesent eget suscipit mi. In cursus 
@@ -72,7 +74,7 @@ const HowItWorks = () => {
                         <Col>
                             <Card className='d-flex flex-column justify-content-around align-items-center step-card'>
                                 <Card.Title> Conversão </Card.Title>
-                                <GiReceiveMoney size={50} />
+                                <ReactSVG src={conversion_image} />                                
                                 <Card.Text> 
                                     Nam tincidunt justo dui, eget aliquet nunc ultricies vel. Donec luctus iaculis 
                                     tortor, ut faucibus tortor fermentum at. Praesent eget suscipit mi. In cursus 
