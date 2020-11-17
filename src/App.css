@@ -29,7 +29,7 @@ body {
     align-items: flex-end;
 }
 
-.hero h1, h5 {
+.hero h1, .hero h5 {
     text-align: right;
 }
 
@@ -96,10 +96,14 @@ h1 {
 }
 
 .banner {
-    width: 100%;
     padding: 30px;
+    text-align: center;
+    background: #21b0fe;
+    color: white;
+    margin: 0 0 50px 0;
     /* background: linear-gradient( to bottom right, rgb(20, 20, 141, 0.7), rgba(24, 121, 250, 0.7)); */
 }
+
 
 .banner p {
     font-size: x-large;
@@ -226,4 +230,21 @@ footer {
 
 html {
     scroll-behavior: smooth;
+}
+
+.small-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.small-image-container p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.small-image {
+    width: 50%;
 }

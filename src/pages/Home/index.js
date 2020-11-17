@@ -5,6 +5,7 @@ import About from './components/About'
 import Team from './components/Team'
 import HowItWorks from './components/HowItWorks'
 import Form from './components/Form'
+import WhyUs from './components/WhyUs'
 
 import image_1 from '../../assets/home_image.jpg'
 import image_2 from '../../assets/home_image_2.jpg'
@@ -41,7 +42,8 @@ const Home  = () => {
                 </Col>
             </Row>
             <About />
-            <Team />
+            <Team /> 
+            <WhyUs />
             <HowItWorks />
             <Form />
         </Container>
