@@ -247,5 +247,15 @@ html {
 
 .small-image {
     width: 50%;
+    height: auto;
     max-width: 150px;
+}
+
+.small-image svg {
+    width: 100%;
+    height: auto;
+}
+
+.remove-stroke path:last-of-type {
+    fill: transparent;
 }
