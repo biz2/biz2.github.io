@@ -268,3 +268,11 @@ html {
 a {
     color: #1ea4db;
 }
+
+.blue-bg,
+.blue-bg:focus,
+.blue-bg:active {
+    background: #1ea4db;
+    border: none;
+}
+

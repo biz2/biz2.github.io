@@ -53,7 +53,7 @@ const NavigationBar = (props) => {
             <Nav
                 className='ml-auto'
             >
-              <Nav.Link href="#form" as={Button} variant='dark' className='text-white' > Notify me of the launch </Nav.Link>
+              <Nav.Link href="#form" as={Button} variant='primary' className='text-white blue-bg' > Notify me of the launch </Nav.Link>
             </Nav>
         </Navbar>
             
