@@ -50,7 +50,7 @@ const WhyUs = () => {
                         </Col>
                         <Col className='small-image-container remove-stroke'>
                             <ReactSVG src={woman_image} alt='Woman enterpreneur' className='small-image' />
-                            <p>Woman <br/> enterpreneurs</p>
+                            <p>Women <br/> enterpreneurs</p>
                         </Col>
                         <Col className='small-image-container'>
                             <ReactSVG src={transgender_image} alt='Transgender enterpreneur' className='small-image' />

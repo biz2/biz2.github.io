@@ -28,13 +28,11 @@ const Home  = () => {
                 <Col>
                     <Container fluid className='hero'>
                         <Row>
-                            <Col xs={6} className='home-col'>
-                                {/* <h1> The next generation on investment plataforms</h1>
-                                <h4> Transparent. Co-participative. Decentralized.</h4> */}
+                            <Col xs={12} md={6} className='home-col'>
                                 <h1> The next generation on investment platforms. </h1>
                                 <h4> Transparent. Co-participative. Decentralized.</h4> 
                             </Col>
-                            <Col xs={6} className='home-image-container' style={{ background: `url(${images[Math.floor( Math.random() * images.length)]})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
+                            <Col xs={12}  md={6} className='home-image-container' style={{ background: `url(${images[Math.floor( Math.random() * images.length)]})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
                                 &nbsp;
                             </Col>
                         </Row>
