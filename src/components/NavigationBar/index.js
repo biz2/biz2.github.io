@@ -58,7 +58,7 @@ const NavigationBar = (props) => {
             >
                 {/* <Nav.Link href="/register" > Cadastro </Nav.Link>  */}
                 &nbsp;
-                <Nav.Link href="/login" as={Button} variant='dark' className='text-white' > Notify me of the launch </Nav.Link>
+                <Nav.Link href="#form" as={Button} variant='dark' className='text-white' > Notify me of the launch </Nav.Link>
             </Nav>
         </Navbar>
             

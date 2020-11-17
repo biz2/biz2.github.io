@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 const Form = () => {
 
     return (
-        <Row>
+        <Row id='form'>
             <Col className='form-section'>
                 <Container>
                     <Row>
