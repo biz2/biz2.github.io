@@ -44,7 +44,7 @@ const Team = () => {
                     <Row> 
                         { team.map( (member, index) => {
                             return (
-                                <Col>
+                                <Col xs={12} md={4}>
                                     <Card className='d-flex flex-column justify-content-around align-items-center team-card'>
                                         <Card.Img src={member.image} bsPrefix='team-img' />
                                         <Card.Title> { member.name } </Card.Title>

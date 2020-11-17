@@ -206,6 +206,7 @@ h1 {
     background: transparent;
     border: none;
     text-align: center;
+    padding: 20px;
 }
 
 .footer {
@@ -276,3 +277,6 @@ a {
     border: none;
 }
 
+.onu-image {
+    width: 100%;
+}

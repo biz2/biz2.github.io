@@ -1,7 +1,6 @@
 import React from 'react'
 
 import { Container, Row, Col } from 'react-bootstrap'
-import onu_image from '../../../../assets/onu.png'
 
 import afro_image from '../../../../assets/afro.svg'
 import woman_image from '../../../../assets/woman.svg'
@@ -9,7 +8,33 @@ import transgender_image from '../../../../assets/transgender.svg'
 import environment_image from '../../../../assets/environment.svg'
 import favela_image from '../../../../assets/favela.svg'
 import power from '../../../../assets/community.svg'
-import { ReactSVG } from 'react-svg'
+import { ReactSVG } from 'react-svg' 
+
+import goal_01 from '../../../../assets/onu/goal_01.jpg'
+import goal_02 from '../../../../assets/onu/goal_02.jpg'
+import goal_03 from '../../../../assets/onu/goal_03.jpg'
+import goal_04 from '../../../../assets/onu/goal_04.jpg'
+import goal_05 from '../../../../assets/onu/goal_05.jpg'
+import goal_06 from '../../../../assets/onu/goal_06.jpg'
+import goal_07 from '../../../../assets/onu/goal_07.jpg'
+import goal_08 from '../../../../assets/onu/goal_08.jpg'
+import goal_09 from '../../../../assets/onu/goal_09.jpg'
+import goal_10 from '../../../../assets/onu/goal_10.jpg'
+import goal_11 from '../../../../assets/onu/goal_11.jpg'
+import goal_12 from '../../../../assets/onu/goal_12.jpg'
+import goal_13 from '../../../../assets/onu/goal_13.jpg'
+import goal_14 from '../../../../assets/onu/goal_14.jpg'
+import goal_15 from '../../../../assets/onu/goal_15.jpg'
+import goal_16 from '../../../../assets/onu/goal_16.jpg'
+import goal_17 from '../../../../assets/onu/goal_17.jpg'
+import goal from '../../../../assets/onu/goal.png'
+
+const goals = [
+    goal_01, goal_02, goal_03, goal_04, goal_05, 
+    goal_06, goal_07, goal_08, goal_09, goal_10, 
+    goal_11, goal_12, goal_13, goal_14, goal_15, 
+    goal_16, goal_17, goal
+]
 
 const WhyUs = () => {
     return (
@@ -31,9 +56,16 @@ const WhyUs = () => {
                         </Col>
                     </Row>
                     <Row>
-                        <Col>
-                            <img src={onu_image} alt='Onu sustainable development goals' />
-                        </Col>
+                        {
+                            goals.map( (g, i) => {
+                                return (
+                                    <Col xs={4} md={2} className='p-0'>
+                                        <img src={g} key={i} alt='Onu goal' className='onu-image' />
+                                    </Col>
+                                    
+                                )
+                            })
+                        }
                     </Row>
                     <Row> <Col> &nbsp; </Col></Row>
                     <Row> <Col> &nbsp; </Col></Row>
