@@ -24,7 +24,7 @@ const team = [
         name: 'Vitor Bigelli', 
         role: "CTO", 
         quote: '"Feel the fear and do it anyway" - Susan Jeffers',
-        description: "Web developer since 2011, holds a techinical degree in Internet Informatics and Udacity Nanodegrees in Front-End and React Development.  Enthusiast of Artificial Intelligence and passionated about learning and teaching, he believes in technology as the tool to build a better world", 
+        description: "Web developer since 2011, holds a techinical degree in Internet Informatics and Udacity Nanodegrees in Front-End and React Development. Enthusiast of Artificial Intelligence and passionated about learning and teaching, Vitor believes in technology as the tool to build a better world", 
         image: vitor_image
     }, 
 ]

@@ -1,0 +1,48 @@
+import React from 'react'
+import { Container, Row, Col, Nav } from 'react-bootstrap' 
+import logo from '../../../../assets/logo.png'
+import { FaFacebook, FaLinkedin } from 'react-icons/fa';
+
+const Footer = () => {
+    return (
+        <Row> 
+            <Col className='footer'>
+                <Container>
+                    <Row>
+                        <Col className='text-left'> 
+                            <img src={logo} className='nav-logo' alt='biz2 logo' />  
+                        </Col> 
+                        <Col>
+                        <Nav className='flex-column text-left' > 
+                            <h5> SOBRE </h5>
+                            <Nav.Link href="#about" > About Us </Nav.Link>
+                            <Nav.Link href="#howitworks" > How it Works </Nav.Link>
+                            <Nav.Link href="#whyus" > Why Us </Nav.Link>
+                        </Nav> 
+                        </Col> 
+                        <Col>
+                        <Nav className='flex-column text-left' >
+                            <h5> LEGAL </h5>
+                            <Nav.Link href="#about" > Regulamentação Crowdfunding </Nav.Link>
+                            <Nav.Link href="#howitworks" > Termos de Uso </Nav.Link>
+                        </Nav> 
+                        </Col>
+                        <Col className='text-left'>
+                            <FaFacebook size={30} className='m-1' color='#1ea4db' />
+                            <FaLinkedin size={30} className='m-1' color='#1ea4db' />
+                            <p className='m-1'> Rua Teste, 123, Centro, São Paulo, SP </p>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xs={12} className='text-center pt-5 small'>
+                            <p> Copyright (c) 2020 biz2. Some rights reserved. | Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a>, <a href="https://www.flaticon.com/free-icon/investing_3310790" title="ultimatearm">ultimatearm</a>  and <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> </p>
+                        </Col>
+                    </Row>
+
+                </Container>
+            </Col>
+        </Row>
+    )
+}
+
+export default Footer

@@ -15,7 +15,7 @@ const WhyUs = () => {
     return (
         <Row id='whyus'> 
             <Col>
-                <Container> 
+                <Container className='page-section'> 
                     <Row>
                         <Col> <h1> Why Us? </h1>   </Col>
                     </Row>
