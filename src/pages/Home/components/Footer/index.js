@@ -14,7 +14,7 @@ const Footer = () => {
                         </Col> 
                         <Col>
                         <Nav className='flex-column text-left' > 
-                            <h5> SOBRE </h5>
+                            <h5> ABOUT </h5>
                             <Nav.Link href="#about" > About Us </Nav.Link>
                             <Nav.Link href="#howitworks" > How it Works </Nav.Link>
                             <Nav.Link href="#whyus" > Why Us </Nav.Link>
@@ -23,8 +23,8 @@ const Footer = () => {
                         <Col>
                         <Nav className='flex-column text-left' >
                             <h5> LEGAL </h5>
-                            <Nav.Link href="#about" > Regulamentação Crowdfunding </Nav.Link>
-                            <Nav.Link href="#howitworks" > Termos de Uso </Nav.Link>
+                            <Nav.Link href="#about" > Crowdfunding Regulation </Nav.Link>
+                            <Nav.Link href="#howitworks" > Terms of Use </Nav.Link>
                         </Nav> 
                         </Col>
                         <Col className='text-left'>
