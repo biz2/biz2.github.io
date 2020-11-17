@@ -31,8 +31,8 @@ const Home  = () => {
                             <Col xs={6} className='home-col'>
                                 {/* <h1> The next generation on investment plataforms</h1>
                                 <h4> Transparent. Co-participative. Decentralized.</h4> */}
-                                <h1> A próxima geração de plataformas de investimento</h1>
-                                <h4> Transparente. Co-participativa. Descentralizada.</h4> 
+                                <h1> The next generation on investment platforms. </h1>
+                                <h4> Transparent. Co-participative. Decentralized.</h4> 
                             </Col>
                             <Col xs={6} className='home-image-container' style={{ background: `url(${images[Math.floor( Math.random() * images.length)]})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
                                 &nbsp;

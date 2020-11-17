@@ -18,7 +18,7 @@ const HowItWorks = () => {
                 <Container className='page-section'>
                     <Row>
                         <Col>
-                            <h1> Como funciona? </h1>
+                            <h1> How it Works </h1>
                         </Col>
                     </Row>
                     <Row>

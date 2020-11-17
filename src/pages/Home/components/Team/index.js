@@ -37,16 +37,7 @@ const Team = () => {
                 <Container className='page-section'>
                     <Row>
                         <Col>
-                            <h1> Nosso time </h1>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col xs={12}>
-                            <div className='banner'> 
-                                <p> 
-                                    We are a group of 
-                                </p>
-                            </div>
+                            <h1> Our team </h1>
                         </Col>
                     </Row>
                     <Row><Col> &nbsp; </Col></Row>

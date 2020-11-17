@@ -21,7 +21,7 @@ const WhatsappButton = ({ history }) => {
     return (
         <Button className='whatsapp-btn' variant='success' onClick={handleClick}>
             <FaWhatsapp /> &nbsp;
-            <span>Fale conosco </span>
+            <span>Talk to Us </span>
         </Button>
     )
 

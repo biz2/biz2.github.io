@@ -237,6 +237,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .small-image-container p {
@@ -247,4 +248,5 @@ html {
 
 .small-image {
     width: 50%;
+    max-width: 150px;
 }

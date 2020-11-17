@@ -37,9 +37,11 @@ const NavigationBar = (props) => {
                 onSelect={(selectedKey) => props.history.push(selectedKey)}
                 className='mr-auto'
             >
-                <Nav.Link href="#about" > Sobre nós </Nav.Link>
+                <Nav.Link href="#about" > About Us </Nav.Link>
                 &nbsp;
-                <Nav.Link href="#howitworks" > Como funciona </Nav.Link>
+                <Nav.Link href="#howitworks" > How it Works </Nav.Link>
+                &nbsp;
+                <Nav.Link href="#whyus" > Why Us </Nav.Link>
                 {/* &nbsp;
                 <Nav.Link href="/register" > Quero investir  </Nav.Link>
                 &nbsp;
@@ -56,7 +58,7 @@ const NavigationBar = (props) => {
             >
                 {/* <Nav.Link href="/register" > Cadastro </Nav.Link>  */}
                 &nbsp;
-                <Nav.Link href="/login" as={Button} variant='dark' className='text-white' > Me avise do lançamento </Nav.Link>
+                <Nav.Link href="/login" as={Button} variant='dark' className='text-white' > Notify me of the launch </Nav.Link>
             </Nav>
         </Navbar>
             
