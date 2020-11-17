@@ -98,7 +98,7 @@ h1 {
 .banner {
     padding: 30px;
     text-align: center;
-    background: #21b0fe;
+    background: #1ea4db;
     color: white;
     margin: 0 0 50px 0;
     /* background: linear-gradient( to bottom right, rgb(20, 20, 141, 0.7), rgba(24, 121, 250, 0.7)); */
@@ -125,11 +125,11 @@ h1 {
 }
 
 .step-card svg {
-    fill: #21b0fe;
+    fill: #1ea4db;
 }
 
 .step-card path {
-    stroke: #21b0fe;
+    stroke: #1ea4db;
 }
 
 .banner-image {
@@ -258,4 +258,8 @@ html {
 
 .remove-stroke path:last-of-type {
     fill: transparent;
+}
+
+a {
+    color: #1ea4db;
 }
