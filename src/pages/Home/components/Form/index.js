@@ -9,7 +9,7 @@ const Form = () => {
                 <Container>
                     <Row>
                         <Col>
-                            <h1> Seja um dos primeiros a saber do lançamento! </h1>
+                            <h1> Know when our platform is ready! </h1>
                         </Col>
                     </Row>
                     <Row id="mc_embed_signup">
@@ -18,7 +18,7 @@ const Form = () => {
                             
                                 <Row>
                                     <div class="mc-field-group col">
-                                        <label for="mce-FNAME">Nome Completo </label>
+                                        <label for="mce-FNAME">Full Name</label>
                                         <input type="text" name="FNAME" class="" id="mce-FNAME" />
                                     </div>
                                 </Row>
@@ -29,7 +29,7 @@ const Form = () => {
                                         <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" />
                                     </div>
                                     <div class="mc-field-group col-6">
-                                        <label for="mce-MMERGE3">Telefone </label>
+                                        <label for="mce-MMERGE3">Phone Number </label>
                                         <input type="text" name="MMERGE3" class="" id="mce-MMERGE3" />
                                     </div>
                                 </Row>
@@ -42,7 +42,7 @@ const Form = () => {
 
                                 <Row>
                                     <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true"><input type="text" name="b_72d3816dbc554b164a0e191dd_51bcdd45ac" tabindex="-1" value="" /></div>
-                                    <div class="clear col"><input type="submit" value="Inscrever-se" name="subscribe" id="mc-embedded-subscribe" class="button" /></div>    
+                                    <div class="clear col"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" /></div>    
                                 </Row>
                             
                             </form>
