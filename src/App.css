@@ -280,3 +280,101 @@ a {
 .onu-image {
     width: 100%;
 }
+
+.navbar-mobile {
+    display: none;
+} 
+
+.nav-button {
+    display: none;
+}
+
+.nav-button div {
+    width: 90%;
+    height: 20%;
+    background-color: #333;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .navbar {
+        height: 70px;
+        background: white;
+    }
+
+    .navbar-links {
+        display: none;
+    } 
+
+    .nav-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        margin: 0 0 0 10px;
+        height: 30px;
+        width: 35px;
+        margin: auto 0 auto 10px;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+        position: relative;
+    }
+
+    .nav-button:active,
+    .nav-button:focus,
+    .nav-button:hover {
+        background: white !important;
+    }
+
+    .nav-button.show div:first-of-type, 
+    .nav-button.show:active div:first-of-type,
+    .nav-button.show:hover div:first-of-type,
+    .nav-button.show:focus div:first-of-type {
+        display: none;
+    }      
+
+    .nav-button.show div, 
+    .nav-button.show:active div,
+    .nav-button.show:focus div,
+    .nav-button.show:hover div {
+        position: absolute;
+    }
+
+    .nav-button.show div:nth-last-of-type(2),
+    .nav-button.show:active div:nth-last-of-type(2),
+    .nav-button.show:focus div:nth-last-of-type(2),
+    .nav-button.show div:nth-last-of-type(2) {
+        transform: rotate(45deg);
+        top: 10px;  
+        left: 5%;
+    }
+
+
+    .nav-button.show div:nth-last-of-type(1),
+    .nav-button.show:active div:nth-last-of-type(1),
+    .nav-button.show:focus div:nth-last-of-type(1),
+    .nav-button.show:hover div:nth-last-of-type(1) {
+        transform: rotate(-45deg);
+        top: 10px;
+        left: 5%;
+    }
+
+    .navbar-mobile {
+        display: flex;
+        position: absolute;
+        flex-direction: column !important;
+        top: 70px;
+        width: 200px;
+        right: -200px;
+        background: white;
+        z-index: -1;
+        transition: right 0.5s ease-in-out;
+        box-shadow: 0 5px 5px -2px #333;
+    }
+
+    .navbar-mobile.show {
+        right: 0;
+    }
+}
