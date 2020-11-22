@@ -17,18 +17,18 @@ const Form = () => {
                             <form className='container' action="https://biz2.us7.list-manage.com/subscribe/post?u=72d3816dbc554b164a0e191dd&amp;id=51bcdd45ac" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
                             
                                 <Row>
-                                    <div class="mc-field-group col">
+                                    <div class="mc-field-group col p-1">
                                         <label for="mce-FNAME">Full Name</label>
                                         <input type="text" name="FNAME" class="" id="mce-FNAME" />
                                     </div>
                                 </Row>
 
                                 <Row>
-                                    <div class="mc-field-group col-6">
+                                    <div class="mc-field-group col-xs-12 col-md-6 p-1">
                                         <label for="mce-EMAIL">Email </label>
                                         <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" />
                                     </div>
-                                    <div class="mc-field-group col-6">
+                                    <div class="mc-field-group col-xs-12 col-md-6 p-1">
                                         <label for="mce-MMERGE3">Phone Number </label>
                                         <input type="text" name="MMERGE3" class="" id="mce-MMERGE3" />
                                     </div>
@@ -42,7 +42,7 @@ const Form = () => {
 
                                 <Row>
                                     <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true"><input type="text" name="b_72d3816dbc554b164a0e191dd_51bcdd45ac" tabindex="-1" value="" /></div>
-                                    <div class="clear col"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" /></div>    
+                                    <div class="clear col-xs-12 p-1"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" /></div>    
                                 </Row>
                             
                             </form>

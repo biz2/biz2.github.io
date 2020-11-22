@@ -55,7 +55,7 @@ const WhyUs = () => {
                             <p> The Sustainable Development Goals (SDGs) or Global Goals are a collection of 17 interlinked goals designed to be a "blueprint to achieve a better and more sustainable future for all" </p>
                         </Col>
                     </Row>
-                    <Row>
+                    <Row className='p-1'>
                         {
                             goals.map( (g, i) => {
                                 return (
@@ -108,11 +108,11 @@ const WhyUs = () => {
                         </Col>
                     </Row>
                     <Row>
-                        <Col className='d-flex flex-column justify-content-center align-items-center'>
-                            <h5 className='text-right p-1'> By using consensus, all investors will be responsible for “auditing” companies to make sure they are aligned with the principles they promise. </h5>
-                        </Col>
-                        <Col>
+                        <Col xs={12} md={6}>
                             <img src={power} alt='Power to people' className='image' />
+                        </Col>
+                        <Col xs={12} md={6} className='d-flex flex-column justify-content-center align-items-center'>
+                            <h5 className='text-left'> By using consensus, all investors will be responsible for “auditing” companies to make sure they are aligned with the principles they promise. </h5>
                         </Col>
                     </Row>
                 </Container>

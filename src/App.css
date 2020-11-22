@@ -18,8 +18,9 @@ body {
     
 }
 
+
 .page-section {
-    padding: 70px 0;
+    padding: 50px 10px;
 }
 
 .home-col {
@@ -27,10 +28,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+    height: 100vh;
 }
 
-.hero h1, .hero h5 {
-    text-align: right;
+.hero h1, .hero h4 {
+    text-align: center;
+    margin: 0 auto;
 }
 
 /* .hero h1 {
@@ -42,17 +45,24 @@ h1 {
     text-align: center;
 }
 
+/* .container-fluid {
+    padding: 15px !important;
+}  */
+
 .home-image-container { 
     background-position: center;
     height: calc(100vh - 85px);
     background-size: cover;
     border-radius: 0 0 0 100%;
-    position: relative;
+    position: absolute;
+    z-index: -1;
 }
 
 .image {
-    width: 100%;
-    max-width: 400px;
+    width: calc(90% - 20px);
+    max-width: 300px;
+    margin: auto;
+    display: block;
 }
 
 
@@ -123,6 +133,7 @@ h1 {
     border: none;
     text-align: center;
     color: black;
+    margin: 10px;
 }
 
 .step-card p {
@@ -216,21 +227,10 @@ h1 {
     text-align: center;
 }
 
-.form-section {
-    padding: 75px;
-}
 
 #mc_embed_signup {
     font-family: 'Arvo', sans-serif;
     font-size: medium;
-}
-
-#mc_embed_signup .col {
-    margin: 0 !important;
-}
-
-#mc_embed_signup .col-6 {
-    margin: 0 !important;
 }
 
 html {

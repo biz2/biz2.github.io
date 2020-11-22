@@ -24,24 +24,24 @@ const HowItWorks = () => {
                         </Col>
                     </Row>
                     <Row>
-                        <Col xs={12}>
-                            <div className='banner'> 
+                        <Col xs={12} className='banner'>
+                            <div> 
                             <p> New economy needs new assets – Tokens linked to and backed by real assets </p>
                             </div>
                         </Col>
                     </Row>
                     <Row><Col> &nbsp; </Col></Row>
                     <Row> 
-                        <Col xs={6} className='paragraph-container'>
+                        <Col xs={12} md={6}>
+                            <img src={image_6} alt='Desenho de um homem segurando um cifrão. Há gráficos de barras no fundo.' className='image' />
+                        </Col>
+                        <Col xs={12} md={6} className='paragraph-container'>
                             <p> The biz2 Platform is a tokenized platform connected to the blockchain technology in the private secondary market. </p>
                             <p> 
                                 We builded a bridge between the secondary market investment world and the Blockchain space
                                 that allows investors to diversify their portfolio by getting access to tokens linked to and backed by
                                 real assets, such as shares of small and medium enterprises (SMEs), pre-IPO startups and quotas of established funds.
                             </p>
-                        </Col>
-                        <Col xs={6}>
-                            <img src={image_6} alt='Desenho de um homem segurando um cifrão. Há gráficos de barras no fundo.' className='image' />
                         </Col>
                     </Row>
                 </Container>
