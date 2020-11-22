@@ -49,7 +49,7 @@ const HowItWorks = () => {
             <Col xs={12} className='banner'>
                 <Container>
                     <Row>
-                        <Col>
+                        <Col xs={12} md={6} lg={4} >
                             <Card className='d-flex flex-column justify-content-around align-items-center step-card'>
                                 <Card.Title> Investimento </Card.Title>
                                 <ReactSVG src={investment_image} />
@@ -60,7 +60,7 @@ const HowItWorks = () => {
                                 </Card.Text>
                             </Card>
                         </Col>
-                        <Col>
+                        <Col xs={12} md={6} lg={4} >
                             <Card className='d-flex flex-column justify-content-around align-items-center step-card'>
                                 <Card.Title> Acompanhamento </Card.Title>
                                 <ReactSVG src={growth_image} />
@@ -71,7 +71,7 @@ const HowItWorks = () => {
                                 </Card.Text>
                             </Card>
                         </Col>
-                        <Col>
+                        <Col xs={12} md={6} lg={4}>
                             <Card className='d-flex flex-column justify-content-around align-items-center step-card'>
                                 <Card.Title> Conversão </Card.Title>
                                 <ReactSVG src={conversion_image} />                                
