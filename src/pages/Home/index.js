@@ -15,9 +15,9 @@ const Home  = () => {
         <Container fluid className='page'>
             <Header />
             <About />
-            <Team /> 
             <WhyUs />
             <HowItWorks />
+            <Team /> 
             <Form />
             <Footer />
         </Container>
