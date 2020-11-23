@@ -86,7 +86,7 @@ h1 {
 }
 
 .form-container {
-    padding: 20px ;
+    padding: 20px;
     border-radius: 10px;
     background: var(--light);
 }
@@ -192,7 +192,7 @@ h1 {
     position: relative;
 }
 
-.team-section::before {
+/* .team-section::before {
     content: ' '; 
     position: absolute;
     width: 50vw;
@@ -202,10 +202,10 @@ h1 {
     background: #333;
     border-radius: 0 100% 100% 0;
     z-index: -1;
-}
+} */
 
 
-.team-section::after {
+/* .team-section::after {
     content: ' '; 
     position: absolute;
     width: 50vw;
@@ -215,7 +215,7 @@ h1 {
     background: #ddd;
     border-radius: 100% 0 0 100%;
     z-index: -1;
-}
+} */
 
 .team-card {
     background: transparent;
