@@ -101,6 +101,7 @@ h1 {
 
 .nav-logo {
     height: 35px;
+    width: 80px;
 }
 
 .whatsapp-btn {
@@ -133,7 +134,7 @@ h1 {
 .step-card {
     padding: 20px;
     background: #fff !important;
-    height: 350px;
+    min-height: 350px;
     border: none;
     text-align: center;
     color: black;
@@ -334,7 +335,7 @@ a {
     .nav-button:active,
     .nav-button:focus,
     .nav-button:hover {
-        background: white !important;
+        background: transparent !important;
     }
 
     .nav-button.show div:first-of-type, 
