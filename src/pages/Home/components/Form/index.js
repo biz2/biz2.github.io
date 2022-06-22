@@ -9,7 +9,8 @@ const Form = () => {
                 <Container>
                     <Row>
                         <Col>
-                            <h1> Know when our platform is ready! </h1>
+                            //<h1> Know when our platform is ready! </h1>
+                            <h1> Saiba quando nossa plataforma estiver pronta! </h1>
                         </Col>
                     </Row>
                     <Row id="mc_embed_signup">
@@ -18,7 +19,8 @@ const Form = () => {
                             
                                 <Row>
                                     <div class="mc-field-group col p-1">
-                                        <label for="mce-FNAME">Full Name</label>
+                                        //<label for="mce-FNAME">Full Name</label>
+                                        <label for="mce-FNAME">Nome</label>
                                         <input type="text" name="FNAME" class="" id="mce-FNAME" />
                                     </div>
                                 </Row>
@@ -29,7 +31,8 @@ const Form = () => {
                                         <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" />
                                     </div>
                                     <div class="mc-field-group col-xs-12 col-md-6 p-1">
-                                        <label for="mce-MMERGE3">Phone Number </label>
+                                        //<label for="mce-MMERGE3">Phone Number </label>
+                                        <label for="mce-MMERGE3">Telefone</label>
                                         <input type="text" name="MMERGE3" class="" id="mce-MMERGE3" />
                                     </div>
                                 </Row>
