@@ -14,17 +14,28 @@ const Footer = () => {
                         </Col> 
                         <Col xs={12} md={3} className='py-3'>
                         <Nav className='flex-column text-left'> 
+                            /*
                             <h5> ABOUT </h5>
                             <Nav.Link href="#about" > About Us </Nav.Link>
                             <Nav.Link href="#howitworks" > How it Works </Nav.Link>
                             <Nav.Link href="#whyus" > Why Us </Nav.Link>
+                            */
+                            <h5> SOBRE </h5>
+                            <Nav.Link href="#about" > Sobre nós </Nav.Link>
+                            <Nav.Link href="#howitworks" > Como funciona </Nav.Link>
+                            <Nav.Link href="#whyus" > Porque nós </Nav.Link>
                         </Nav> 
                         </Col> 
                         <Col xs={12} md={3} className='py-3'>
                         <Nav className='flex-column text-left'>
+                            /*
                             <h5> LEGAL </h5>
                             <Nav.Link href="#about" > Crowdfunding Regulation </Nav.Link>
                             <Nav.Link href="#howitworks" > Terms of Use </Nav.Link>
+                            */
+                            <h5> LEGAL </h5>
+                            <Nav.Link href="#about" > Regulação </Nav.Link>
+                            <Nav.Link href="#howitworks" > Termos de uso </Nav.Link>
                         </Nav> 
                         </Col>
                         <Col className='text-left py-3' xs={12} md={3}>
@@ -32,7 +43,7 @@ const Footer = () => {
                                 <FaFacebook size={30} className='my-0 mx-1' color='#1ea4db' />
                                 <FaLinkedin size={30} className='my-0 mx-1' color='#1ea4db' />
                             </div>
-                            <p className='m-1'> Rua Teste, 123, Centro, São Paulo, SP </p>
+                            <p className='m-1'> Rua Expedicionário Poitena, 196, Centro, Itanhaém, SP </p>
                         </Col>
                     </Row>
                     <Row>
