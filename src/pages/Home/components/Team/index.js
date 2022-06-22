@@ -48,9 +48,11 @@ const Team = () => {
                                     <Card className='d-flex flex-column justify-content-around align-items-center team-card'>
                                         <Card.Img src={member.image} bsPrefix='team-img' />
                                         <Card.Title> { member.name } </Card.Title>
+                                        /*
                                         <Card.Text> { member.role } </Card.Text>
                                         <Card.Text> { member.description } </Card.Text>
                                         <Card.Text> Favorite quote: <br /> { member.quote } </Card.Text>
+                                        */
                                     </Card>
                                 </Col>
                             )
