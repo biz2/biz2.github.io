@@ -46,13 +46,18 @@ const WhyUs = () => {
                     </Row>
                     <Row>
                         <Col className='banner'> 
-                            <h3> For us, it is essential that investors know where they are investing and which social causes they support </h3>
+                            //<h3> For us, it is essential that investors know where they are investing and which social causes they support </h3>
+                            <h3> Para nós, é essencial que os investidores saibam onde estão investindo e quais causas apoiam </h3>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
+                            /*
                             <h4> ONU Sustainable Development Goals </h4>
-                            <p> The Sustainable Development Goals (SDGs) or Global Goals are a collection of 17 interlinked goals designed to be a "blueprint to achieve a better and more sustainable future for all" </p>
+                            <p> The Sustainable Development Goals (SDGs) or Global Goals is a collection of 17 interlinked goals designed to be a "blueprint to achieve a better and more sustainable future for all" </p>
+                            */
+                            <h4> Metas de Desenvolvimento Sustentável da ONU </h4>
+                            <p> As metas de desenvolvimento sustentável ou metas globais é uma coleção de 17 metas interligadas desenvolvidas para serem a "direção para alcançarmos um futuro melhor e mais sustentável para todos  </p>
                         </Col>
                     </Row>
                     <Row className='p-1'>
@@ -71,40 +76,48 @@ const WhyUs = () => {
                     <Row> <Col> &nbsp; </Col></Row>
                     <Row>
                         <Col>
+                            /*
                             <h4> Minorities, Underprivileged Communities and Social Causes </h4> 
                             <p> Which entrepreneurs would you like to see prospering? We want to give investors the <strong> chance to decide</strong>. </p>
+                            */
+                            <h4> Minorias, Comunidades Desprevilegiadas e Causas Sociais </h4> 
+                            <p> Quais empreendedores você gostaria de ver prosperando? Nós proporcionamos aos investidores <strong>a chance de decidir</strong>. </p>
                         </Col>
                     </Row>
                     <Row>
                         <Col className='small-image-container remove-stroke'>
                             <ReactSVG src={afro_image} alt='Black enterpreneur' className='small-image' /> 
-                            <p>Black <br/> enterpreneurs</p>
+                            //<p>Black <br/> enterpreneurs</p>
                         </Col>
                         <Col className='small-image-container remove-stroke'>
                             <ReactSVG src={woman_image} alt='Woman enterpreneur' className='small-image' />
-                            <p>Women <br/> enterpreneurs</p>
+                            //<p>Women <br/> enterpreneurs</p>
                         </Col>
                         <Col className='small-image-container'>
                             <ReactSVG src={transgender_image} alt='Transgender enterpreneur' className='small-image' />
-                            <p>LGBT+ <br/> enterpreneurs</p>
+                            //<p>LGBT+ <br/> enterpreneurs</p>
                         </Col>
                     </Row>
                     <Row>
                         <Col className='small-image-container'>                          
                             <ReactSVG src={environment_image} alt='Environmental enterpreneur' className='small-image' />                              
-                            <p>Environmental <br/> causes</p>                          
+                            //<p>Environmental <br/> causes</p>                          
                         </Col>
                         <Col className='small-image-container'>
                             <ReactSVG src={favela_image} alt='Favela enterpreneur' className='small-image' />                            
-                            <p>Social <br/> causes</p>                          
+                            //<p>Social <br/> causes</p>                          
                         </Col>   
                     </Row> 
                     <Row> <Col> &nbsp; </Col></Row>
                     <Row> <Col> &nbsp; </Col></Row>
                     <Row> 
                         <Col> 
+                            /*
                             <h4> Power to the People </h4> 
                             <p> In our platform, the community has the power. </p>
+                            */
+                            <h4> Poder ao Povo </h4> 
+                            <p> Na nossa plataforma, a comunidade detém o poder. </p>
                         </Col>
                     </Row>
                     <Row>
@@ -112,7 +125,8 @@ const WhyUs = () => {
                             <img src={power} alt='Power to people' className='image' />
                         </Col>
                         <Col xs={12} md={6} className='d-flex flex-column justify-content-center align-items-center'>
-                            <h5 className='text-left'> By using consensus, all investors will be responsible for “auditing” companies to make sure they are aligned with the principles they promise. </h5>
+                            //<h5 className='text-left'> By using consensus, all investors will be responsible for “auditing” companies to make sure they are aligned with the principles they promise. </h5>
+                            <h5 className='text-left'> Por consenso, os investidores serão co-responsáveis pela "auditoria" das empresas, para garantir que estão alinhados com os príncipios estabelecidos. </h5>
                         </Col>
                     </Row>
                 </Container>
