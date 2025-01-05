@@ -25,7 +25,7 @@ const Header = () => {
                             <h1> The next generation on investment platforms. </h1>
                             <h4> Transparent. Co-participative. Decentralized.</h4> 
                             */
-                            <h1> Próxima geração em plataformas de investimento. </h1>
+                            <h1> 1Próxima geração em plataformas de investimento. </h1>
                             <h4> Transparente. Co-participativa. Decentralizada.</h4> 
                         </Col>
                         <Col className='home-image-container' style={{ background: `url(${images[Math.floor( Math.random() * images.length)]})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
